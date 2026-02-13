@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(){
+float sayi1=1,sayi2=1,sonuc;  int secim;
+printf("toplama icin 1 e bas\n");
+printf("cikarma icin 2 e bas\n");
+printf("carpma icin 3 e bas\n");
+printf("bolme icin 4 e bas\n");
+printf("secim:\n");
+scanf("%d",&secim);
+printf("iki sayi giriniz:\n");
+scanf("%f%f",&sayi1,&sayi2);
+switch(secim){
+case 1:printf("toplama islemi\n");
+sonuc=sayi1+sayi2;
+printf("sonuc:%f\n",sonuc);
+break;
+case 2:printf("cikarma islemi\n");
+sonuc=sayi1-sayi2;
+printf("sonuc:%f\n",sonuc);
+break;
+case 3:printf("carpma islemi\n");
+sonuc=sayi1*sayi2;
+printf("sonuc:%f\n",sonuc);
+break;
+case 4:printf("bolme islemi\n");
+sonuc=sayi1/sayi2;
+printf("sonuc:%f\n",sonuc);
+break;
+default:printf("gecersiz secim\n");
+break;
+}
+return 0;
+}
